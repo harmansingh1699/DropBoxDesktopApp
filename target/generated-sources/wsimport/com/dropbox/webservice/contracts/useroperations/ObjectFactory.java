@@ -38,51 +38,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DropBoxLoginRequest }
-     * 
-     */
-    public DropBoxLoginRequest createDropBoxLoginRequest() {
-        return new DropBoxLoginRequest();
-    }
-
-    /**
-     * Create an instance of {@link RegisterUser }
-     * 
-     */
-    public RegisterUser createRegisterUser() {
-        return new RegisterUser();
-    }
-
-    /**
-     * Create an instance of {@link AuthenticateUserResponse }
-     * 
-     */
-    public AuthenticateUserResponse createAuthenticateUserResponse() {
-        return new AuthenticateUserResponse();
-    }
-
-    /**
-     * Create an instance of {@link RegisterUserResponse }
-     * 
-     */
-    public RegisterUserResponse createRegisterUserResponse() {
-        return new RegisterUserResponse();
-    }
-
-    /**
      * Create an instance of {@link DropBoxRegistrationRequest }
      * 
      */
     public DropBoxRegistrationRequest createDropBoxRegistrationRequest() {
         return new DropBoxRegistrationRequest();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxRegistrationResponse }
-     * 
-     */
-    public DropBoxRegistrationResponse createDropBoxRegistrationResponse() {
-        return new DropBoxRegistrationResponse();
     }
 
     /**
@@ -94,11 +54,51 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DropBoxLoginRequest }
+     * 
+     */
+    public DropBoxLoginRequest createDropBoxLoginRequest() {
+        return new DropBoxLoginRequest();
+    }
+
+    /**
+     * Create an instance of {@link RegisterUserResponse }
+     * 
+     */
+    public RegisterUserResponse createRegisterUserResponse() {
+        return new RegisterUserResponse();
+    }
+
+    /**
+     * Create an instance of {@link AuthenticateUserResponse }
+     * 
+     */
+    public AuthenticateUserResponse createAuthenticateUserResponse() {
+        return new AuthenticateUserResponse();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxRegistrationResponse }
+     * 
+     */
+    public DropBoxRegistrationResponse createDropBoxRegistrationResponse() {
+        return new DropBoxRegistrationResponse();
+    }
+
+    /**
      * Create an instance of {@link Exception }
      * 
      */
     public Exception createException() {
         return new Exception();
+    }
+
+    /**
+     * Create an instance of {@link RegisterUser }
+     * 
+     */
+    public RegisterUser createRegisterUser() {
+        return new RegisterUser();
     }
 
     /**
