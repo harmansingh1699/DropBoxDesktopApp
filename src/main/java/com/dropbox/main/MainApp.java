@@ -33,7 +33,7 @@ public class MainApp extends Application {
             String userName = reader.readLine();
             String password = reader.readLine();
             
-            if(CommonValidations.isStringEmpty(userName) && CommonValidations.isStringEmpty(password)){
+            if(!CommonValidations.isStringEmpty(userName) && !CommonValidations.isStringEmpty(password)){
                 first = false;
             }
         }catch(Exception e){

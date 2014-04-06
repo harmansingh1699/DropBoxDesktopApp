@@ -30,23 +30,6 @@ public interface UserOperationsService {
 
     /**
      * 
-     * @param authenticationRequest
-     * @return
-     *     returns com.dropbox.webservice.contracts.useroperations.DropBoxLoginResponse
-     * @throws Exception
-     */
-    @WebMethod(operationName = "AuthenticateUser")
-    @WebResult(name = "AuthenticationResponse", targetNamespace = "")
-    @RequestWrapper(localName = "AuthenticateUser", targetNamespace = "http://useroperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.useroperations.AuthenticateUser")
-    @ResponseWrapper(localName = "AuthenticateUserResponse", targetNamespace = "http://useroperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.useroperations.AuthenticateUserResponse")
-    public DropBoxLoginResponse authenticateUser(
-        @WebParam(name = "AuthenticationRequest", targetNamespace = "")
-        DropBoxLoginRequest authenticationRequest)
-        throws Exception
-    ;
-
-    /**
-     * 
      * @param registrationRequest
      * @return
      *     returns com.dropbox.webservice.contracts.useroperations.DropBoxRegistrationResponse
@@ -59,6 +42,23 @@ public interface UserOperationsService {
     public DropBoxRegistrationResponse registerUser(
         @WebParam(name = "RegistrationRequest", targetNamespace = "")
         DropBoxRegistrationRequest registrationRequest)
+        throws Exception
+    ;
+
+    /**
+     * 
+     * @param authenticationRequest
+     * @return
+     *     returns com.dropbox.webservice.contracts.useroperations.DropBoxLoginResponse
+     * @throws Exception
+     */
+    @WebMethod(operationName = "AuthenticateUser")
+    @WebResult(name = "AuthenticationResponse", targetNamespace = "")
+    @RequestWrapper(localName = "AuthenticateUser", targetNamespace = "http://useroperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.useroperations.AuthenticateUser")
+    @ResponseWrapper(localName = "AuthenticateUserResponse", targetNamespace = "http://useroperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.useroperations.AuthenticateUserResponse")
+    public DropBoxLoginResponse authenticateUser(
+        @WebParam(name = "AuthenticationRequest", targetNamespace = "")
+        DropBoxLoginRequest authenticationRequest)
         throws Exception
     ;
 

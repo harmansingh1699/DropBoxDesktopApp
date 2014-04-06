@@ -44,11 +44,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetFileShareKeyResponse }
+     * Create an instance of {@link DownloadFileResponse }
      * 
      */
-    public GetFileShareKeyResponse createGetFileShareKeyResponse() {
-        return new GetFileShareKeyResponse();
+    public DownloadFileResponse createDownloadFileResponse() {
+        return new DownloadFileResponse();
     }
 
     /**
@@ -60,83 +60,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DropBoxGetSharedFileRequest }
-     * 
-     */
-    public DropBoxGetSharedFileRequest createDropBoxGetSharedFileRequest() {
-        return new DropBoxGetSharedFileRequest();
-    }
-
-    /**
-     * Create an instance of {@link DownloadFile }
-     * 
-     */
-    public DownloadFile createDownloadFile() {
-        return new DownloadFile();
-    }
-
-    /**
-     * Create an instance of {@link GetFileShareKey }
-     * 
-     */
-    public GetFileShareKey createGetFileShareKey() {
-        return new GetFileShareKey();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxGenerateSharingKeyResponse }
-     * 
-     */
-    public DropBoxGenerateSharingKeyResponse createDropBoxGenerateSharingKeyResponse() {
-        return new DropBoxGenerateSharingKeyResponse();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxGetFilesRequest }
-     * 
-     */
-    public DropBoxGetFilesRequest createDropBoxGetFilesRequest() {
-        return new DropBoxGetFilesRequest();
-    }
-
-    /**
      * Create an instance of {@link DropBoxDownloadResponse }
      * 
      */
     public DropBoxDownloadResponse createDropBoxDownloadResponse() {
         return new DropBoxDownloadResponse();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxGenerateSharingKeyRequest }
-     * 
-     */
-    public DropBoxGenerateSharingKeyRequest createDropBoxGenerateSharingKeyRequest() {
-        return new DropBoxGenerateSharingKeyRequest();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxDownloadRequest }
-     * 
-     */
-    public DropBoxDownloadRequest createDropBoxDownloadRequest() {
-        return new DropBoxDownloadRequest();
-    }
-
-    /**
-     * Create an instance of {@link UploadFileResponse }
-     * 
-     */
-    public UploadFileResponse createUploadFileResponse() {
-        return new UploadFileResponse();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxUploadResponse }
-     * 
-     */
-    public DropBoxUploadResponse createDropBoxUploadResponse() {
-        return new DropBoxUploadResponse();
     }
 
     /**
@@ -148,27 +76,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetFilesResponse }
+     * Create an instance of {@link DownloadFile }
      * 
      */
-    public GetFilesResponse createGetFilesResponse() {
-        return new GetFilesResponse();
+    public DownloadFile createDownloadFile() {
+        return new DownloadFile();
     }
 
     /**
-     * Create an instance of {@link DropBoxUploadRequest }
+     * Create an instance of {@link DropBoxUploadResponse }
      * 
      */
-    public DropBoxUploadRequest createDropBoxUploadRequest() {
-        return new DropBoxUploadRequest();
-    }
-
-    /**
-     * Create an instance of {@link DownloadFileResponse }
-     * 
-     */
-    public DownloadFileResponse createDownloadFileResponse() {
-        return new DownloadFileResponse();
+    public DropBoxUploadResponse createDropBoxUploadResponse() {
+        return new DropBoxUploadResponse();
     }
 
     /**
@@ -180,11 +100,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetFiles }
+     * Create an instance of {@link UploadFileResponse }
      * 
      */
-    public GetFiles createGetFiles() {
-        return new GetFiles();
+    public UploadFileResponse createUploadFileResponse() {
+        return new UploadFileResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetFileShareKey }
+     * 
+     */
+    public GetFileShareKey createGetFileShareKey() {
+        return new GetFileShareKey();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxDownloadRequest }
+     * 
+     */
+    public DropBoxDownloadRequest createDropBoxDownloadRequest() {
+        return new DropBoxDownloadRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetFilesResponse }
+     * 
+     */
+    public GetFilesResponse createGetFilesResponse() {
+        return new GetFilesResponse();
     }
 
     /**
@@ -196,11 +140,67 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DropBoxGetSharedFileRequest }
+     * 
+     */
+    public DropBoxGetSharedFileRequest createDropBoxGetSharedFileRequest() {
+        return new DropBoxGetSharedFileRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetFiles }
+     * 
+     */
+    public GetFiles createGetFiles() {
+        return new GetFiles();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxGenerateSharingKeyRequest }
+     * 
+     */
+    public DropBoxGenerateSharingKeyRequest createDropBoxGenerateSharingKeyRequest() {
+        return new DropBoxGenerateSharingKeyRequest();
+    }
+
+    /**
      * Create an instance of {@link GetSharedFile }
      * 
      */
     public GetSharedFile createGetSharedFile() {
         return new GetSharedFile();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxUploadRequest }
+     * 
+     */
+    public DropBoxUploadRequest createDropBoxUploadRequest() {
+        return new DropBoxUploadRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetFileShareKeyResponse }
+     * 
+     */
+    public GetFileShareKeyResponse createGetFileShareKeyResponse() {
+        return new GetFileShareKeyResponse();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxGetFilesRequest }
+     * 
+     */
+    public DropBoxGetFilesRequest createDropBoxGetFilesRequest() {
+        return new DropBoxGetFilesRequest();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxGenerateSharingKeyResponse }
+     * 
+     */
+    public DropBoxGenerateSharingKeyResponse createDropBoxGenerateSharingKeyResponse() {
+        return new DropBoxGenerateSharingKeyResponse();
     }
 
     /**

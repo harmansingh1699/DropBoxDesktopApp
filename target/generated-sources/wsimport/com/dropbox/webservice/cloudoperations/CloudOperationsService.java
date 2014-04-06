@@ -35,20 +35,6 @@ public interface CloudOperationsService {
 
     /**
      * 
-     * @param getFilesRequest
-     * @return
-     *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxGetFilesResponse
-     */
-    @WebMethod(operationName = "GetFiles")
-    @WebResult(name = "GetFilesResponse", targetNamespace = "")
-    @RequestWrapper(localName = "GetFiles", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFiles")
-    @ResponseWrapper(localName = "GetFilesResponse", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFilesResponse")
-    public DropBoxGetFilesResponse getFiles(
-        @WebParam(name = "GetFilesRequest", targetNamespace = "")
-        DropBoxGetFilesRequest getFilesRequest);
-
-    /**
-     * 
      * @param uploadRequest
      * @return
      *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxUploadResponse
@@ -105,5 +91,19 @@ public interface CloudOperationsService {
     public DropBoxDownloadResponse getSharedFile(
         @WebParam(name = "GetFileShareKeyRequest", targetNamespace = "")
         DropBoxGetSharedFileRequest getFileShareKeyRequest);
+
+    /**
+     * 
+     * @param getFilesRequest
+     * @return
+     *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxGetFilesResponse
+     */
+    @WebMethod(operationName = "GetFiles")
+    @WebResult(name = "GetFilesResponse", targetNamespace = "")
+    @RequestWrapper(localName = "GetFiles", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFiles")
+    @ResponseWrapper(localName = "GetFilesResponse", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFilesResponse")
+    public DropBoxGetFilesResponse getFiles(
+        @WebParam(name = "GetFilesRequest", targetNamespace = "")
+        DropBoxGetFilesRequest getFilesRequest);
 
 }

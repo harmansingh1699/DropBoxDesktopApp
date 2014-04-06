@@ -66,6 +66,7 @@ public class ShareFileSceneFXMLController implements Initializable, IScreenContr
     public void signOut() {
         File file = new File("userDetails.cloudSync");
         file.delete();
+        this.screenPage.setScreen("login");
     }
 
 }

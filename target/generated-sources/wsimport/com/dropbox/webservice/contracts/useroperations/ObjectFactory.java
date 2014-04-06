@@ -38,27 +38,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Exception }
+     * 
+     */
+    public Exception createException() {
+        return new Exception();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxRegistrationResponse }
+     * 
+     */
+    public DropBoxRegistrationResponse createDropBoxRegistrationResponse() {
+        return new DropBoxRegistrationResponse();
+    }
+
+    /**
      * Create an instance of {@link DropBoxRegistrationRequest }
      * 
      */
     public DropBoxRegistrationRequest createDropBoxRegistrationRequest() {
         return new DropBoxRegistrationRequest();
-    }
-
-    /**
-     * Create an instance of {@link AuthenticateUser }
-     * 
-     */
-    public AuthenticateUser createAuthenticateUser() {
-        return new AuthenticateUser();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxLoginRequest }
-     * 
-     */
-    public DropBoxLoginRequest createDropBoxLoginRequest() {
-        return new DropBoxLoginRequest();
     }
 
     /**
@@ -78,19 +78,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DropBoxRegistrationResponse }
+     * Create an instance of {@link AuthenticateUser }
      * 
      */
-    public DropBoxRegistrationResponse createDropBoxRegistrationResponse() {
-        return new DropBoxRegistrationResponse();
+    public AuthenticateUser createAuthenticateUser() {
+        return new AuthenticateUser();
     }
 
     /**
-     * Create an instance of {@link Exception }
+     * Create an instance of {@link DropBoxLoginResponse }
      * 
      */
-    public Exception createException() {
-        return new Exception();
+    public DropBoxLoginResponse createDropBoxLoginResponse() {
+        return new DropBoxLoginResponse();
     }
 
     /**
@@ -102,11 +102,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DropBoxLoginResponse }
+     * Create an instance of {@link DropBoxLoginRequest }
      * 
      */
-    public DropBoxLoginResponse createDropBoxLoginResponse() {
-        return new DropBoxLoginResponse();
+    public DropBoxLoginRequest createDropBoxLoginRequest() {
+        return new DropBoxLoginRequest();
     }
 
     /**
