@@ -44,51 +44,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DownloadFileResponse }
+     * Create an instance of {@link DropBoxUploadRequest }
      * 
      */
-    public DownloadFileResponse createDownloadFileResponse() {
-        return new DownloadFileResponse();
+    public DropBoxUploadRequest createDropBoxUploadRequest() {
+        return new DropBoxUploadRequest();
     }
 
     /**
-     * Create an instance of {@link UploadFile }
+     * Create an instance of {@link DropBoxGetFilesResponse }
      * 
      */
-    public UploadFile createUploadFile() {
-        return new UploadFile();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxDownloadResponse }
-     * 
-     */
-    public DropBoxDownloadResponse createDropBoxDownloadResponse() {
-        return new DropBoxDownloadResponse();
-    }
-
-    /**
-     * Create an instance of {@link Exception }
-     * 
-     */
-    public Exception createException() {
-        return new Exception();
-    }
-
-    /**
-     * Create an instance of {@link DownloadFile }
-     * 
-     */
-    public DownloadFile createDownloadFile() {
-        return new DownloadFile();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxUploadResponse }
-     * 
-     */
-    public DropBoxUploadResponse createDropBoxUploadResponse() {
-        return new DropBoxUploadResponse();
+    public DropBoxGetFilesResponse createDropBoxGetFilesResponse() {
+        return new DropBoxGetFilesResponse();
     }
 
     /**
@@ -108,35 +76,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetFileShareKey }
+     * Create an instance of {@link DownloadFileResponse }
      * 
      */
-    public GetFileShareKey createGetFileShareKey() {
-        return new GetFileShareKey();
+    public DownloadFileResponse createDownloadFileResponse() {
+        return new DownloadFileResponse();
     }
 
     /**
-     * Create an instance of {@link DropBoxDownloadRequest }
+     * Create an instance of {@link DropBoxGenerateSharingKeyResponse }
      * 
      */
-    public DropBoxDownloadRequest createDropBoxDownloadRequest() {
-        return new DropBoxDownloadRequest();
+    public DropBoxGenerateSharingKeyResponse createDropBoxGenerateSharingKeyResponse() {
+        return new DropBoxGenerateSharingKeyResponse();
     }
 
     /**
-     * Create an instance of {@link GetFilesResponse }
+     * Create an instance of {@link DropBoxDownloadResponse }
      * 
      */
-    public GetFilesResponse createGetFilesResponse() {
-        return new GetFilesResponse();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxGetFilesResponse }
-     * 
-     */
-    public DropBoxGetFilesResponse createDropBoxGetFilesResponse() {
-        return new DropBoxGetFilesResponse();
+    public DropBoxDownloadResponse createDropBoxDownloadResponse() {
+        return new DropBoxDownloadResponse();
     }
 
     /**
@@ -148,11 +108,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetFiles }
+     * Create an instance of {@link DropBoxUploadResponse }
      * 
      */
-    public GetFiles createGetFiles() {
-        return new GetFiles();
+    public DropBoxUploadResponse createDropBoxUploadResponse() {
+        return new DropBoxUploadResponse();
     }
 
     /**
@@ -164,27 +124,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetSharedFile }
+     * Create an instance of {@link GetFileShareKey }
      * 
      */
-    public GetSharedFile createGetSharedFile() {
-        return new GetSharedFile();
+    public GetFileShareKey createGetFileShareKey() {
+        return new GetFileShareKey();
     }
 
     /**
-     * Create an instance of {@link DropBoxUploadRequest }
+     * Create an instance of {@link GetFilesResponse }
      * 
      */
-    public DropBoxUploadRequest createDropBoxUploadRequest() {
-        return new DropBoxUploadRequest();
+    public GetFilesResponse createGetFilesResponse() {
+        return new GetFilesResponse();
     }
 
     /**
-     * Create an instance of {@link GetFileShareKeyResponse }
+     * Create an instance of {@link GetFiles }
      * 
      */
-    public GetFileShareKeyResponse createGetFileShareKeyResponse() {
-        return new GetFileShareKeyResponse();
+    public GetFiles createGetFiles() {
+        return new GetFiles();
+    }
+
+    /**
+     * Create an instance of {@link Exception }
+     * 
+     */
+    public Exception createException() {
+        return new Exception();
     }
 
     /**
@@ -196,11 +164,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DropBoxGenerateSharingKeyResponse }
+     * Create an instance of {@link GetSharedFile }
      * 
      */
-    public DropBoxGenerateSharingKeyResponse createDropBoxGenerateSharingKeyResponse() {
-        return new DropBoxGenerateSharingKeyResponse();
+    public GetSharedFile createGetSharedFile() {
+        return new GetSharedFile();
+    }
+
+    /**
+     * Create an instance of {@link GetFileShareKeyResponse }
+     * 
+     */
+    public GetFileShareKeyResponse createGetFileShareKeyResponse() {
+        return new GetFileShareKeyResponse();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxDownloadRequest }
+     * 
+     */
+    public DropBoxDownloadRequest createDropBoxDownloadRequest() {
+        return new DropBoxDownloadRequest();
+    }
+
+    /**
+     * Create an instance of {@link UploadFile }
+     * 
+     */
+    public UploadFile createUploadFile() {
+        return new UploadFile();
+    }
+
+    /**
+     * Create an instance of {@link DownloadFile }
+     * 
+     */
+    public DownloadFile createDownloadFile() {
+        return new DownloadFile();
     }
 
     /**

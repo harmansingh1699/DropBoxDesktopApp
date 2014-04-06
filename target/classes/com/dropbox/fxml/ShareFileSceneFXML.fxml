@@ -36,7 +36,7 @@
         <Font name="System Bold" size="13.0" />
       </font>
     </Button>
-    <Button layoutX="480.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0" text="Browse" />
+    <Button layoutX="480.0" layoutY="270.0" mnemonicParsing="false" onAction="#browse" prefHeight="30.0" text="Browse" />
     <TextField fx:id="filePath" layoutX="253.0" layoutY="270.0" prefHeight="30.0" prefWidth="200.0" promptText="Select file to be shared" />
     <Button layoutX="189.0" layoutY="371.0" mnemonicParsing="false" onAction="#signOut" text="SignOut" />
     <Button layoutX="453.0" layoutY="371.0" mnemonicParsing="false" onAction="#moveToDownload" text="Download" />

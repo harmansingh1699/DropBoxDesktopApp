@@ -38,6 +38,62 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DropBoxLoginRequest }
+     * 
+     */
+    public DropBoxLoginRequest createDropBoxLoginRequest() {
+        return new DropBoxLoginRequest();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxRegistrationRequest }
+     * 
+     */
+    public DropBoxRegistrationRequest createDropBoxRegistrationRequest() {
+        return new DropBoxRegistrationRequest();
+    }
+
+    /**
+     * Create an instance of {@link DropBoxLoginResponse }
+     * 
+     */
+    public DropBoxLoginResponse createDropBoxLoginResponse() {
+        return new DropBoxLoginResponse();
+    }
+
+    /**
+     * Create an instance of {@link AuthenticateUser }
+     * 
+     */
+    public AuthenticateUser createAuthenticateUser() {
+        return new AuthenticateUser();
+    }
+
+    /**
+     * Create an instance of {@link AuthenticateUserResponse }
+     * 
+     */
+    public AuthenticateUserResponse createAuthenticateUserResponse() {
+        return new AuthenticateUserResponse();
+    }
+
+    /**
+     * Create an instance of {@link RegisterUserResponse }
+     * 
+     */
+    public RegisterUserResponse createRegisterUserResponse() {
+        return new RegisterUserResponse();
+    }
+
+    /**
+     * Create an instance of {@link RegisterUser }
+     * 
+     */
+    public RegisterUser createRegisterUser() {
+        return new RegisterUser();
+    }
+
+    /**
      * Create an instance of {@link Exception }
      * 
      */
@@ -51,62 +107,6 @@ public class ObjectFactory {
      */
     public DropBoxRegistrationResponse createDropBoxRegistrationResponse() {
         return new DropBoxRegistrationResponse();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxRegistrationRequest }
-     * 
-     */
-    public DropBoxRegistrationRequest createDropBoxRegistrationRequest() {
-        return new DropBoxRegistrationRequest();
-    }
-
-    /**
-     * Create an instance of {@link RegisterUserResponse }
-     * 
-     */
-    public RegisterUserResponse createRegisterUserResponse() {
-        return new RegisterUserResponse();
-    }
-
-    /**
-     * Create an instance of {@link AuthenticateUserResponse }
-     * 
-     */
-    public AuthenticateUserResponse createAuthenticateUserResponse() {
-        return new AuthenticateUserResponse();
-    }
-
-    /**
-     * Create an instance of {@link AuthenticateUser }
-     * 
-     */
-    public AuthenticateUser createAuthenticateUser() {
-        return new AuthenticateUser();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxLoginResponse }
-     * 
-     */
-    public DropBoxLoginResponse createDropBoxLoginResponse() {
-        return new DropBoxLoginResponse();
-    }
-
-    /**
-     * Create an instance of {@link RegisterUser }
-     * 
-     */
-    public RegisterUser createRegisterUser() {
-        return new RegisterUser();
-    }
-
-    /**
-     * Create an instance of {@link DropBoxLoginRequest }
-     * 
-     */
-    public DropBoxLoginRequest createDropBoxLoginRequest() {
-        return new DropBoxLoginRequest();
     }
 
     /**
