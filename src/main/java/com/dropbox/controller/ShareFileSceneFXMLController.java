@@ -51,14 +51,7 @@ public class ShareFileSceneFXMLController implements Initializable, IScreenContr
         binding = new ShareFileSceneBinding();
         Bindings.bindBidirectional(filePath.textProperty(), binding.filePathProperty());
         Bindings.bindBidirectional(emailAddress.textProperty(), binding.emailAddressProperty());
-        Task task = new Task<Void>() {
-            @Override
-            public Void call() {
-                new ExecuteCheck().start();
-                return null;
-            }
-        };
-        new Thread(task).start();
+        
     }
 
     @Override

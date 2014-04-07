@@ -2,11 +2,13 @@ package com.dropbox.main;
 
 import com.dropbox.controller.ScreenNavigator;
 import com.dropbox.util.CommonValidations;
+import com.dropbox.util.ExecuteCheck;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
+import javafx.concurrent.Task;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
@@ -25,24 +27,33 @@ public class MainApp extends Application {
         screenNavigator.loadScreen("login", "/com/dropbox/fxml/LoginSceneFXML.fxml");
         screenNavigator.loadScreen("shareFile", "/com/dropbox/fxml/ShareFileSceneFXML.fxml");
         screenNavigator.loadScreen("downloadSharedFile", "/com/dropbox/fxml/DownloadSharedFileSceneFXML.fxml");
-        
+
         boolean first = true;
-        
-        try{
+
+        try {
             BufferedReader reader = new BufferedReader(new FileReader(new File("userDetails.cloudSync")));
             String userName = reader.readLine();
             String password = reader.readLine();
-            
-            if(!CommonValidations.isStringEmpty(userName) && !CommonValidations.isStringEmpty(password)){
+
+            if (!CommonValidations.isStringEmpty(userName) && !CommonValidations.isStringEmpty(password)) {
                 first = false;
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        if(first)
+        if (first) {
             screenNavigator.setScreen("login");
-        else
+        } else {
             screenNavigator.setScreen("shareFile");
+            Task task = new Task<Void>() {
+                @Override
+                public Void call() {
+                    new ExecuteCheck().start();
+                    return null;
+                }
+            };
+            new Thread(task).start();
+        }
         FlowPane root = new FlowPane();
         root.getChildren().addAll(screenNavigator);
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
