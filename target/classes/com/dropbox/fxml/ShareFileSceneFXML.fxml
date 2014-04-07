@@ -31,7 +31,7 @@
       </font>
     </Label>
     <TextField id="userName" fx:id="emailAddress" layoutX="253.0" layoutY="223.0" prefHeight="31.0" prefWidth="200.0" promptText="Recepient's Email-ID" />
-    <Button layoutX="285.0" layoutY="321.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="129.0" text="Share" textAlignment="LEFT" textFill="#1d0033">
+    <Button layoutX="285.0" layoutY="321.0" mnemonicParsing="false" onAction="#shareFile" prefHeight="31.0" prefWidth="129.0" text="Share" textAlignment="LEFT" textFill="#1d0033">
       <font>
         <Font name="System Bold" size="13.0" />
       </font>

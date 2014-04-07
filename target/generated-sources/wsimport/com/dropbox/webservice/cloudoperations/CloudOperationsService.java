@@ -52,34 +52,6 @@ public interface CloudOperationsService {
 
     /**
      * 
-     * @param downloadFileRequest
-     * @return
-     *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxDownloadResponse
-     */
-    @WebMethod(operationName = "DownloadFile")
-    @WebResult(name = "DownloadFileResponse", targetNamespace = "")
-    @RequestWrapper(localName = "DownloadFile", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.DownloadFile")
-    @ResponseWrapper(localName = "DownloadFileResponse", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.DownloadFileResponse")
-    public DropBoxDownloadResponse downloadFile(
-        @WebParam(name = "DownloadFileRequest", targetNamespace = "")
-        DropBoxDownloadRequest downloadFileRequest);
-
-    /**
-     * 
-     * @param getFileShareKeyRequest
-     * @return
-     *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxGenerateSharingKeyResponse
-     */
-    @WebMethod(operationName = "GetFileShareKey")
-    @WebResult(name = "GetFileShareKeyResponse", targetNamespace = "")
-    @RequestWrapper(localName = "GetFileShareKey", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFileShareKey")
-    @ResponseWrapper(localName = "GetFileShareKeyResponse", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFileShareKeyResponse")
-    public DropBoxGenerateSharingKeyResponse getFileShareKey(
-        @WebParam(name = "GetFileShareKeyRequest", targetNamespace = "")
-        DropBoxGenerateSharingKeyRequest getFileShareKeyRequest);
-
-    /**
-     * 
      * @param getFileShareKeyRequest
      * @return
      *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxDownloadResponse
@@ -94,6 +66,20 @@ public interface CloudOperationsService {
 
     /**
      * 
+     * @param downloadFileRequest
+     * @return
+     *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxDownloadResponse
+     */
+    @WebMethod(operationName = "DownloadFile")
+    @WebResult(name = "DownloadFileResponse", targetNamespace = "")
+    @RequestWrapper(localName = "DownloadFile", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.DownloadFile")
+    @ResponseWrapper(localName = "DownloadFileResponse", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.DownloadFileResponse")
+    public DropBoxDownloadResponse downloadFile(
+        @WebParam(name = "DownloadFileRequest", targetNamespace = "")
+        DropBoxDownloadRequest downloadFileRequest);
+
+    /**
+     * 
      * @param getFilesRequest
      * @return
      *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxGetFilesResponse
@@ -105,5 +91,19 @@ public interface CloudOperationsService {
     public DropBoxGetFilesResponse getFiles(
         @WebParam(name = "GetFilesRequest", targetNamespace = "")
         DropBoxGetFilesRequest getFilesRequest);
+
+    /**
+     * 
+     * @param getFileShareKeyRequest
+     * @return
+     *     returns com.dropbox.webservice.contracts.cloudoperations.DropBoxGenerateSharingKeyResponse
+     */
+    @WebMethod(operationName = "GetFileShareKey")
+    @WebResult(name = "GetFileShareKeyResponse", targetNamespace = "")
+    @RequestWrapper(localName = "GetFileShareKey", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFileShareKey")
+    @ResponseWrapper(localName = "GetFileShareKeyResponse", targetNamespace = "http://cloudoperations.contracts.webservice.dropbox.com/", className = "com.dropbox.webservice.contracts.cloudoperations.GetFileShareKeyResponse")
+    public DropBoxGenerateSharingKeyResponse getFileShareKey(
+        @WebParam(name = "GetFileShareKeyRequest", targetNamespace = "")
+        DropBoxGenerateSharingKeyRequest getFileShareKeyRequest);
 
 }

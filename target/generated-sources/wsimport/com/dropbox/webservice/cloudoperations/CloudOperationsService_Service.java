@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "CloudOperationsService", targetNamespace = "http://cloudoperations.webservice.dropbox.com/", wsdlLocation = "http://Ravjots-MacBook-Air.local:8080/aws-java-sample/CloudOperationsService?wsdl")
+@WebServiceClient(name = "CloudOperationsService", targetNamespace = "http://cloudoperations.webservice.dropbox.com/", wsdlLocation = "http://ec2-54-81-237-76.compute-1.amazonaws.com:8080/aws-java-sample/CloudOperationsService?wsdl")
 public class CloudOperationsService_Service
     extends Service
 {
@@ -30,9 +30,9 @@ public class CloudOperationsService_Service
         try {
             URL baseUrl;
             baseUrl = com.dropbox.webservice.cloudoperations.CloudOperationsService_Service.class.getResource(".");
-            url = new URL(baseUrl, "http://Ravjots-MacBook-Air.local:8080/aws-java-sample/CloudOperationsService?wsdl");
+            url = new URL(baseUrl, "http://ec2-54-81-237-76.compute-1.amazonaws.com:8080/aws-java-sample/CloudOperationsService?wsdl");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: 'http://Ravjots-MacBook-Air.local:8080/aws-java-sample/CloudOperationsService?wsdl', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'http://ec2-54-81-237-76.compute-1.amazonaws.com:8080/aws-java-sample/CloudOperationsService?wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
         CLOUDOPERATIONSSERVICE_WSDL_LOCATION = url;

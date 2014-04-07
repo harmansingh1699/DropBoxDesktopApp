@@ -73,7 +73,9 @@ public class ExecuteCheck {
                 HashMap<String, String> map = getFiles();
                 System.out.println(map.size());
                 File file = new File("CloudSync");
-
+                
+                if(!file.exists())
+                    file.mkdir();
                 File[] files = file.listFiles();
 
                 if (files.length > 0) {
@@ -155,7 +157,7 @@ public class ExecuteCheck {
                         if (bfile != null && bfile.length > 0) {
                             try {
                                 FileOutputStream fileOuputStream
-                                        = new FileOutputStream("CloudSync\\" + file1);
+                                        = new FileOutputStream("CloudSync/" + file1);
                                 fileOuputStream.write(bfile);
                                 fileOuputStream.close();
                             } catch (IOException ex) {

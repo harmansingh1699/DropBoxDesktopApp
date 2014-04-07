@@ -121,7 +121,7 @@
                         </goals>
                         <configuration>
                             <wsdlUrls>
-                                <wsdlUrl>http://Ravjots-MacBook-Air.local:8080/aws-java-sample/CloudOperationsService?wsdl</wsdlUrl>
+                                <wsdlUrl>http://ec2-54-81-237-76.compute-1.amazonaws.com:8080/aws-java-sample/CloudOperationsService?wsdl</wsdlUrl>
                             </wsdlUrls>
                             <xnocompile>false</xnocompile>
                         </configuration>
@@ -135,7 +135,7 @@
                         </goals>
                         <configuration>
                             <wsdlUrls>
-                                <wsdlUrl>http://Ravjots-MacBook-Air.local:8080/aws-java-sample/UserOperationsService?wsdl</wsdlUrl>
+                                <wsdlUrl>http://ec2-54-81-237-76.compute-1.amazonaws.com:8080/aws-java-sample/UserOperationsService?wsdl</wsdlUrl>
                             </wsdlUrls>
                             <xnocompile>false</xnocompile>
                         </configuration>

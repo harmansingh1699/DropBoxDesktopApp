@@ -91,7 +91,7 @@ public class DownloadSharedFileSceneFXMLController implements Initializable, ISc
                         if (bfile != null && bfile.length > 0) {
                             try {
                                 FileOutputStream fileOuputStream
-                                        = new FileOutputStream("CloudSync\\" + response.getFileName());
+                                        = new FileOutputStream("CloudSync/" + response.getFileName());
                                 fileOuputStream.write(bfile);
                                 fileOuputStream.close();
                             } catch (IOException ex) {
