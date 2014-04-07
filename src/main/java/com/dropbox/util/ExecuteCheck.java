@@ -66,7 +66,7 @@ public class ExecuteCheck {
     }
 
     public void start() {
-        Timeline fiveSecondsWonder = new Timeline(new KeyFrame(Duration.seconds(5), new EventHandler<ActionEvent>() {
+        Timeline fiveSecondsWonder = new Timeline(new KeyFrame(Duration.seconds(60), new EventHandler<ActionEvent>() {
 
             @Override
             public void handle(ActionEvent event) {
@@ -76,7 +76,7 @@ public class ExecuteCheck {
                 
                 if(!file.exists())
                     file.mkdir();
-                File[] files = file.listFiles();
+                File[] files = file.listFiles(new IgnoreSystemFileFilter());
 
                 if (files.length > 0) {
                     if (map.size() > 0) {

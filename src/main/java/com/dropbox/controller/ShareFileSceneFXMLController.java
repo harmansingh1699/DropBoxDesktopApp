@@ -8,6 +8,7 @@ package com.dropbox.controller;
 import com.dropbox.animations.InvokeAnimation;
 import com.dropbox.binding.ShareFileSceneBinding;
 import com.dropbox.util.CommonValidations;
+import com.dropbox.util.ExecuteCheck;
 import com.dropbox.webservice.cloudoperations.CloudOperationsService_Service;
 import com.dropbox.webservice.contracts.cloudoperations.DropBoxGenerateSharingKeyRequest;
 import com.dropbox.webservice.contracts.cloudoperations.DropBoxGenerateSharingKeyResponse;
@@ -50,6 +51,14 @@ public class ShareFileSceneFXMLController implements Initializable, IScreenContr
         binding = new ShareFileSceneBinding();
         Bindings.bindBidirectional(filePath.textProperty(), binding.filePathProperty());
         Bindings.bindBidirectional(emailAddress.textProperty(), binding.emailAddressProperty());
+        Task task = new Task<Void>() {
+            @Override
+            public Void call() {
+                new ExecuteCheck().start();
+                return null;
+            }
+        };
+        new Thread(task).start();
     }
 
     @Override
@@ -82,24 +91,24 @@ public class ShareFileSceneFXMLController implements Initializable, IScreenContr
                     }
                     request.setFileName(binding.getFilePath());
                     request.setSharedUserName(binding.getEmailAddress());
-                    
+
                     CloudOperationsService_Service servicePort = new CloudOperationsService_Service();
-                    DropBoxGenerateSharingKeyResponse response = 
-                            servicePort.getCloudOperationsPort().getFileShareKey(request);
-                    
-                    if(CommonValidations.isStringEmpty(response.getKey())){
+                    DropBoxGenerateSharingKeyResponse response
+                            = servicePort.getCloudOperationsPort().getFileShareKey(request);
+
+                    if (CommonValidations.isStringEmpty(response.getKey())) {
                         errors("Something went wrong");
-                    }else{
-                        successMessage("Please share this key "+response.getKey()+" with "+binding.getEmailAddress());
+                    } else {
+                        successMessage("Please share this key " + response.getKey() + " with " + binding.getEmailAddress());
                     }
-                    
+
                     return null;
                 }
             };
             new Thread(task).start();
         }
     }
-    
+
     public void successMessage(final String message) {
         Platform.runLater(new Runnable() {
             public void run() {
